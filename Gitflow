@@ -1,0 +1,22 @@
+Gitflow is a set of guidelines to help any given software development process in a version control system.
+
+In a version-control, the main repository is called the Master branch which is cloned (forked) so that Developers can work on it - locally. This is known as the “Develop” branch. From this branch, each Developer working on the software would clone their own copy of the latest Develop branch to work on. This becomes a “Feature” branch. Usually, it is best practice to add one or minimal number of features to the branch at a time – for easy debugging/management. The completed and tested code is then committed to the branch. After that, the Feature branch is merged to the Develop branch. When Feature branches from various Developers are merged in the Develop branch and used for testing, it becomes the Release branch. Testing and bug-fixes happen here; but NO NEW FEATURES. If everything looks good to the team of Developers, the Release is then merged to the Master fork. At that point the Master becomes version 2.0 (or any increment measure pre-agreed upon). If any bug is found (minor errors) in the Master, after the merger, that version is forked to be fixed, but not joined to the Develop fork. The quick correction fork is called the “Hotfix” branch. Once the correction is made, the Hotfix is them merged with the Master to become 2.1; it is also merged with the latest Develop fork.
+
+The 2 Key branches are:
+
+                   Master branch – Stable
+                   Develop Branch - Unstable
+
+ 
+
+myGitflow
+
+ 
+
+ 
+
+Information gleaned from
+
+https://www.youtube.com/watch?v=6LhTe8Mz6jM
+
+https://www.canddi.com/blog/2013/10/usings-gitflow-for-content-management/
